@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --color:#111111;
+}
+
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    background-color: #ffffe0;
+  
+}
+
+main {
+    border: solid 3px var(--color);
+    border-radius: 20px;
+    
+}
+
+
+
+.acendeu {
+    box-shadow: 3px 3px 8px rgb(39, 38, 32);
+    background-color: #ffff91;
+    transition: all 0.5s;
+}
+
+.apagou{
+    background-color: #fcfceb;
+}
+.corFundo {
+    background-color:  #ffff91;
+}
+
+
+.h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    color: #fcff00;
+    text-shadow: 3px 3px 7px black;
+    margin: 3rem auto;
+}
+
+#div-lanpada{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem;
+    
+
+}
+
+#div-lanpada h2 {
+    font-size: 35px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 2rem;
+    color: #fcff00;
+    text-shadow: 2px 2px 5px #111111;
+}
+
+.cImg{
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+
+
+
+
+.botao {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.botao button {
+    background-color: #f9fb75c1;
+    color:black;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:bolder;
+    margin: 1rem 1rem;
+    padding: 0.1rem;
+    height: 2.5rem;
+    width: 7rem;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px black;
+}
+
+

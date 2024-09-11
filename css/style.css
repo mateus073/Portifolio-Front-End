@@ -1,0 +1,1304 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* variaveis de cores, fontes, e tamanho das fontes */
+:root {
+    --branco: #F0F1F2;
+    --castanho: #d9d1a9e3;
+    --cinza-claro: #464e59;
+    --cinza-escuro: #323a42;
+    --cinza-medio: #42484e;
+    --preto: #172126;
+    --font-texto: "Roboto Mono", system-ui;
+    --font-titulo2: "Oswald", sans-serif;
+    --font-titulo: "Merriweather Sans", sans-serif;
+    --font-g: 3rem;
+    --font-m: 2rem;
+    --font-p: 1rem;
+    --font-pp: 0.8rem;
+}
+
+
+/* comeco da div principal do home (capa e menu de navegacao) */
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../img/2fundom.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+/* cabecalho / menu */
+.hCabecalho {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    font-family: var(--font-texto);
+    background-image: linear-gradient(to right,#182128,#2A333A,#3F4851);
+}
+
+/* logo do menu*/
+.logo {
+    padding: 20px 5px;
+    background-color: var(--castanho);
+    border-radius: 4px;
+    font-size: 0.8rem;
+    color: var(--cinza-escuro);
+    font-family: var(--font-titulo);
+    white-space: nowrap;
+}
+
+
+
+/* comeca do menu de navegacao */
+#menuNav {
+    display: flex;
+    gap: 3rem;
+}
+
+.menuLi {
+    margin: 5px;
+    list-style: none;
+    white-space: nowrap;
+    transition: all 0.5s ease;
+}
+
+/* elfeito js de zom no li */
+.menuLi.jsLi {
+    transform: scale(1.2);
+}
+
+
+.aLink {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--branco);
+    transition: all 0.5s ease;
+}
+
+/* efeto js de mudar cor */
+.aLink.jsA {
+    color: var(--castanho);
+}
+/* fim do menu de desktop */
+
+
+
+/* comeco do meu menu mobile */
+    .btnAbrir {
+        display: none;
+        margin-right: 10px;
+        z-index: 8888;
+    }
+
+    .menuMob {
+        flex-direction: column;
+        background-color: rgba(50, 58, 66, 0.9);
+        height: 100vh;
+        position: fixed;
+        top: 0; 
+        right: 0;
+        z-index: 9999;  
+        width: 0%; 
+        overflow: hidden; 
+        transition: all 0.5s ease;
+    }
+
+    /* funcao do js que abre menu*/
+    .menuMob.abrirMenu{
+        width: 70%;
+    }
+
+    /* sempre que a class abrir menu existir dentro de menu mob a class .overlayMenu tb ira existir
+     dando o feito de apadado no site quando o menu estiver aberto  */
+    .menuMob.abrirMenu ~ .overlayMenu {
+        display: block;
+    }
+
+    /* botao x que fecha menu */
+    .fecharMenu {
+        margin: 10px ;
+    }
+
+    .fecharMenu img {
+        width: 30px;
+        height: 30px;
+    }
+
+    /* itens do menu mobile */
+    .menuMob nav ul {
+        text-align: right;
+    }
+
+    .menuMob nav ul li {
+        list-style: none;
+    }
+
+    .menuMob nav ul li a {
+        padding: 20px 8%;
+        text-decoration: none;
+        font-size: var(--font-m);
+        color: var(--branco);
+        display: block;
+    }
+
+    .menuMob nav ul li a:hover {
+        background-color: var(--cinza-claro);
+        color: var(--castanho);
+    }
+    /* fim dos itens do menu mobile */
+
+
+    /* efeito de escurecer o conteudo do site quando abrir o menu mobile 
+    (e so uma div que cobre todo o conteudo e tem com sua cor preta transparente)*/
+    .overlayMenu {
+        background-color: rgba(0, 0, 0, 0.7);
+        width: 100%;
+        height: 100%;
+        position: fixed; 
+        top: 0;
+        left: 0;
+        z-index: 9888;
+        display: none;
+    }
+    /* fim do meu menu mobile */
+
+
+
+
+/*comeco do conteudodo princial do home*/
+
+/* div do conteudo */
+#home2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 7%;
+    padding: 5rem 0rem 4rem 0rem;
+}
+
+
+/* cineci da minha foto */
+.fotoMateus {
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    object-fit: cover;
+}
+
+.zoom {
+    margin: 10rem auto 3rem auto;
+    overflow: hidden;
+    height: 12rem;
+    width: 12rem;
+    transition: all 0.5s ease;
+}
+
+/* js responsavel por dar zom na img */
+.zoom.jsZ {
+    transform: scale(1.3);
+    filter: drop-shadow(3px 3px 6px rgb(24, 24, 25));
+}
+/* fim da minha foto  */
+
+
+
+/* comeco dos titulo que ficam abaixo da foto */
+#home2 h2 {
+    font-family: var(--font-titulo);
+    color: var(--castanho);
+    font-size: var(--font-g);
+}
+
+#home2 h3 {
+    font-size: var(--font-m);
+    color: var(--branco);
+    font-family: var(--font-texto);
+}
+/* fim dos textos que ficam abaixo das fotos */
+
+
+
+/* começo links das redes sociais */
+
+/*todos os figures de redes sociais*/
+.meRedes img,
+.social img {
+    margin: auto 1rem;
+    height: 2rem;
+    border: solid 1px var(--branco);
+    background-color: var(--branco);
+    border-radius: 100%;
+    box-shadow: 1px 1px 2px var(--branco);
+    transition: all 0.5s ease;
+}
+
+
+/* comeco do efeito js nas img de redes sociais  */
+.git.jsGit {
+    border: solid 2px #ffa200;
+    border-radius: 100%;
+    background-color: #ffa200;
+    transform: scale(1.1);
+}
+
+.linkedin.jsLkd {
+    border: solid 2px #0e76a8;
+    border-radius: 100%;
+    background-color: #0e76a8;
+    transform: scale(1.1);
+
+}
+
+.instagram.jsInsta {
+    border: solid 2px #fc70cb;
+    border-radius: 100%;
+    background-color: #ed00ae;
+    transform: scale(1.1);
+
+}
+
+.whatsapp.jsWhats {
+    border: solid 2px #4dfd01;
+    border-radius: 100%;
+    background-color: #4dfd01;
+    transform: scale(1.1);
+
+}
+/* fim do js das imgs de redes sociais */
+
+
+
+/* FIM DE SECTION HOME / COMECO DA SECTION SOBRE MIM -- FIM DE SECTION HOME / COMECO DA SECTION SOBRE MIM -- FIM DE SECTION HOME / COMECO DA SECTION SOBRE MIM --   */
+
+
+
+/* comeco da div sobre mim */
+
+/* div pricipal */
+#sobreMin {
+    padding: 1rem 2rem;
+    padding-top: 6rem;
+    border-bottom: solid 2px var(--castanho);
+    background-color: var(--cinza-claro);
+}
+
+/* titulo da pagina sobre mim */
+.tituloMe {
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+    text-align: center;
+    font-family: var(--font-titulo);
+    font-size: var(--font-g);
+    color: var(--castanho);
+}
+
+/* div do conteudo pricipal que contem as duas divs */
+#conteudoMe {
+    display: flex;
+    justify-content: center;
+    margin: 3rem auto;
+    flex-wrap: wrap;
+}
+
+
+/* div da esquerda que contem a foto */
+.esquedaFoto {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem auto 1rem auto;
+}
+
+
+/* foto corpo todo */
+.fotoG {
+    margin: auto 10px;
+    border-radius: 10px;
+}
+
+
+/* icones de redes sociais */
+.socialMin {
+    margin: 1rem auto;
+}
+/* final da div da esquerda */
+
+
+
+
+/* comeco da div que contem os texto a direita */
+
+/* div da direita */
+.direitaTexto {
+    flex: 1.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #2F3945, #353D4A,#404853);
+}
+
+
+.h2Me {
+    font-size: 1.2rem;
+    color: var(--castanho);
+    font-family: var(--font-titulo2);
+    margin: 0.4rem;
+}
+
+.direitaTexto p {
+    text-indent: 20px;
+    max-width: 100%;
+    font-family: var(--font-texto);
+    font-size: var(--font-pp);
+    color: var(--branco);
+    margin-bottom: 0.3rem;
+
+}
+
+/* tabela que contem os dados */
+.divTabela {
+    width: 100%;
+}
+
+.tabela {
+    width: 100%;
+    border: solid 1px var(--castanho);
+    border-radius: 5px;
+    font-size: var(--font-p);
+    color: var(--castanho);
+    font-family: var(--font-texto);
+    margin-top: 2rem;
+    justify-content: space-around;
+}
+
+td {
+    padding: 0.6rem;
+    white-space: nowrap;
+}
+
+
+
+
+/* FIM DA SECTION SOBRE MIM / COMECO DA SECTION PROJETOS -- FIM DA SECTION SOBRE MIM / COMECO DA SECTION PROJETOS -- FIM DA SECTION SOBRE MIM / COMECO DA SECTION PROJETOS -- */
+
+
+
+
+/* comeco da secao dos meus projetos */
+
+/* div principal */
+#divP {
+    background-color: var(--cinza-claro);
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
+
+
+.h1Projetos {
+    text-align: center;
+    font-family: var(--font-titulo);
+    font-size: var(--font-g);
+    color: var(--castanho);
+    padding: 2rem;
+}
+
+
+
+/* div principal que contem os dois lados  */
+#projetosConteudo {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+
+/* lado esquerdo que contem todos os projetos */
+.Qprojetos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex: 2.0;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+/* instrucoes pra passar o mouse em projetos */
+.h3esp {
+    width: 100%;
+    font-size: var(--font-m);
+    font-family: var(--font-titulo);
+    color: var(--branco);
+    text-align: center;
+}
+
+
+/* divs que armazena os figure e os figcaption com os artigos */
+.DimgProj {
+    height: 13rem;
+    width: 20rem;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    border-radius: 5px;
+}
+
+
+/* imgs dos projetos*/
+.DimgProj img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.DimgProj:hover {
+    transform: scale(1.1);
+
+}
+
+
+
+/* comeco do figure que armazena as imgs e a legenda(span) */
+
+/* figure dos projetos "em breve" */
+.figuProje {
+    background-image: url('../img/loading.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+    box-shadow: 3px 3px 6px var(--preto);
+}
+
+.figuProje1 {
+    background-image: url('../img/calculadoraIMC.png');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+    box-shadow: 3px 3px 6px var(--preto);
+}
+
+.figuProje2 {
+    background-image: url('../img/lista-tarefas.png');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 3px 3px 6px var(--preto);
+}
+
+.figuProje3 {
+    background-image: url('../img/filmes-torrent.png');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 3px 3px 6px var(--preto);
+}
+
+.figuProje4 {
+    background-image: url('../img/lanpada.png');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 3px 3px 6px black;
+}
+/* fim dos figure que contem as imgs e span (legenda dos projetos) */
+
+/* span com a legenda dos projetos*/
+.legendaFoto {
+    text-decoration: none;
+    color: var(--branco);
+    font-family: var(--font-texto);
+    font-size: var(--font-p);
+    background-color: rgba(0, 0, 0, 0.5);
+    white-space: nowrap;
+    text-align: center;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.legendaFoto:hover {
+    opacity: 1;
+    box-shadow: 3px 3px 6px var(--preto);
+}
+/* fim dos span de legenda dos projetos */
+
+
+/* botao que exibe mais projetos*/
+.bMais {
+    width: 100%;
+    text-align: center;
+}
+
+.bVer {
+    padding: 10px;
+    border: solid 2px var(--castanho);
+    background-color: rgba(50, 58, 66, 0.3);
+    box-shadow: 2px 2px 4px var(--cinza-escuro);
+    border-radius: 20px;
+    font-family: var(--font-texto);
+    font-size: var(--font-p);
+    color: var(--branco);
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.bVer:hover {
+    opacity: 0.8;
+    box-shadow: 1px 1px 3px black;
+}
+/* fim do botao ver mais */
+
+
+/* comeco da div dos projetos do ver mais */
+.verMais {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex: 2.5;
+    gap: 1.5rem;
+}
+
+/* js que ira exibir o restante dos projetos */
+.exbP {
+    display: flex;
+}
+
+/* paragrafos com especificacoes que aparecem em especificaçoes */
+.figcLegenda {
+    display: none;
+}
+
+/* js que exibe os artigos em especificaçoes */
+.exibeArt {
+    display: flex;
+}
+
+
+/* fim do lado esquedo de meus projetos */
+
+
+
+
+/*comeco do lado direito que contem as especificacoes  */
+
+/* div principal do lado direito(especificaçoes) */
+#espProjetos {
+    max-height: 770px;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to right,#2F3945, #353D4A, #404853);
+    padding: 1rem;
+    margin-right: 1rem;
+    flex: 1.0;
+    border-radius: 10px;
+}
+
+
+/* titulo da div do lado direto(especificacoes) */
+.hEsp {
+    text-align: center;
+    font-size: var(--font-m);
+    font-family: var(--font-texto);
+    color: var(--castanho);
+    border-bottom: solid 1px var(--castanho);
+}
+
+
+/*  comeco dos artigo com as especificacoes do projeto */
+.pEmDev {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    color: var(--branco);
+    font-family: var(--font-texto);
+    font-size: var(--font-p);
+    padding: 0.5rem;
+    border-width: 0px;
+    min-height: 400px;
+}
+
+.pEmDev.jsPEmDev {
+    display: flex;
+}
+
+.textoEsp,
+.artIMC,
+.artTarefas,
+.artFilmes,
+.artLanp,
+.pmsg {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: var(--branco);
+    font-family: var(--font-texto);
+    font-size: var(--font-p);
+    padding: 0.5rem;
+    border-width: 0px;
+    min-height: 400px;
+}
+
+.textoEsp h2,
+.artIMC h2,
+.artTarefas h2,
+.artFilmes h2,
+.artLanp h2 {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 5px auto;
+    color: var(--castanho);
+}
+
+.textoEsp h3,
+.artIMC h3,
+.artTarefas h3,
+.artFilmes h3,
+.artLanp h3 {
+    font-size: var(--font-p);
+    text-align: center;
+    margin-bottom: 5px;
+    color: var(--castanho);
+}
+
+.textoEsp p,
+.artIMC p,
+.artTarefas p,
+.artFilmes p,
+.artLanp p {
+    color: var(--branco);
+    text-indent: 20px;
+    text-align: justify;
+    font-size: var(--font-pp);
+}
+
+.textoEsp li,
+.artIMC li,
+.artTarefas li,
+.artFilmes li,
+.artLanp li {
+    list-style: inside;
+    margin-bottom: 5px;
+    font-size: var(--font-pp);
+}
+/* fim dos artigos de especificacoes de projetos */
+
+
+
+
+/* paragrafo "passe o curso e veja especificaçoes" */
+#pr {
+    margin-top: 30px;
+}
+
+/* começo dos botoes do repositorio e do site */
+.bEsp {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.bEsp button {
+    font-family: var(--font-texto);
+    font-size: var(--font-p);
+    color: var(--branco);
+    background-color: rgb(231, 238, 238, 0.1);
+    padding: 8px;
+    border: solid 1px var(--castanho);
+    border-radius: 20px;
+    box-shadow: 1px 1px 2px var(--cinza-claro);
+    cursor: pointer;
+}
+
+.bEsp button:hover {
+    opacity: 0.8;
+    box-shadow: 1px 1px 3px black;
+}
+/* final da div direta(especificacoes) da secao projetos */
+
+
+
+
+/* FINAL DA SECTION DE ESPECIFICAÇOES / COMECO DA SECTION DE HABILIDADES -- FINAL DA SECTION DE ESPECIFICAÇOES / COMECO DA SECTION DE HABILIDADES -- /
+
+
+
+
+/* comeco da section de habilidades */
+
+/* section pai de habilidade */
+#Hab {
+    background-color: var(--branco);
+    display: flex;
+    flex-direction: column;
+    padding-top: 4rem;
+}
+
+.tituloH {
+    padding: 2rem;
+    text-align: center;
+    font-size: var(--font-g);
+    font-family: var(--font-titulo);
+    color: var(--cinza-medio);
+    text-transform: uppercase;
+    border-bottom: solid 3px var(--cinza-escuro);
+    margin: auto 20px;
+}
+
+
+/* titulo de tecnologias dominadas */
+.h3Tec {
+    margin-top: 2rem;
+    text-align: center;
+    width: 100%;
+    font-size: var(--font-m);
+    font-family: var(--font-titulo);
+    color: var(--cinza-escuro);
+}
+
+/* section de tec que contem as divs com img e os p */
+.divTec2 {
+    gap: 1rem;
+    padding: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto 1rem;
+    flex-wrap: wrap;
+}
+
+
+/* divs que contem as imgs de logo e os p  */
+.dtec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+/* paragrafos das logo das imgs */
+.ptec {
+    font-size: var(--font-pp);
+    font-family: var(--font-texto);
+    color: var(--cinza-claro);
+    max-width: 159px;
+}
+
+
+
+/* comeco do efeito de desfoque das tecnologias dominadas */
+
+/* quando der hover na section pai das divs tec, vai coloco efeito de desfocar para todas as divs que contem as imgs e os p  */
+.divTec2:hover .dtec{
+    opacity: 0.5;
+    filter: blur(1px);
+    transform: scale(0.9);
+}
+
+/* comeco dos efeitos especifico pra cada img.*/
+  /*quando ativar efeito acima cada uma tera seu efeito de cor especifico */
+.divTec2:hover #dhtml:hover{
+    opacity: 1;
+    transform: scale(1.2);
+    filter: drop-shadow(1px 1px 8px #fc6c34);
+}
+
+.divTec2:hover #dcss:hover{
+    opacity: 1;
+    transform: scale(1.2);
+    filter: drop-shadow(1px 1px 8px #72c2e4);
+}
+
+.divTec2:hover #djs:hover{
+    opacity: 1;
+    transform: scale(1.2);
+    filter: drop-shadow(1px 1px 8px #e4ac04);
+}
+
+.divTec2:hover #dgit:hover{
+    opacity: 1;
+    transform: scale(1.2);
+    filter: drop-shadow(1px 1px 8px #F24949);
+}
+/* fim das divs com img e p das tecnologias e dos efeios de hover nelas */
+
+/* paragrafo de texnologias extras */
+.tecTexto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+    border-bottom: solid 3px var(--cinza-escuro);
+}
+
+.h4Extras {
+    font-family: var(--font-titulo);
+    font-size: var(--font-m);
+    color: var(--cinza-escuro);
+    font-weight: bold;
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.pTecExtr {
+    font-family: var(--font-texto);
+    font-size: var(--font-p);
+    max-width: 80%;
+    font-weight: 400;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* fim da secao de tecnologias dominadas fim da secao de tecnologias dominadas fim da secao de tecnologias dominadas fim da secao de tecnologias dominadas fim da secao de tecnologias dominadas */
+
+/* comeco da secao de cursos */
+
+/* section pai do cursos */
+.sCursos {
+    padding: 3rem;
+    gap: 3rem;
+    border-radius: 10px;
+}
+
+.hcursos {
+    width: 100%;
+    text-align: center;
+    font-family: var(--font-titulo2);
+    font-size: var(--font-g);
+    color: var(--cinza-escuro);
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+
+/* artigos que contem os cursos */
+.aCursos {
+    display: flex;
+    gap: 4rem;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.aCursos section {
+    background-image: url('../img/fundoCertificado.png');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    min-width: 300px;
+    border-radius: 5px;
+    padding: 1rem;
+    font-family: var(--font-texto);
+    font-size: var(--font-pp);
+    transition: all 0.3s ease-in;
+}
+
+.aCursos:hover section{
+    transform: scale(0.9);
+    filter: blur(2px);
+}
+
+.sCursos section:hover {
+    transform: scale(1.1);
+    box-shadow: 2px 2px 4px black;
+    filter: blur(0px);
+    box-shadow: 3px 3px 6px var(--cinza-escuro);
+    
+}
+
+.tituloCursos {
+    font-family: var(--font-titulo);
+    font-size: var(--font-p);
+    color: var(--castanho);
+    font-weight: bold;
+    padding-bottom: 0.5rem;
+}
+
+.aCursos section p {
+    margin-bottom: 5px;
+    font-family: var(--font-texto);
+    font-size: var(--font-pp);
+    color: var(--branco);
+}
+
+
+
+/* FIM DA SECTION HABILIDADES / COMECO DO RODAPE -- FIM DA SECTION HABILIDADES / COMECO DO RODAPE -- FIM DA SECTION HABILIDADES / COMECO DO RODAPE --  */
+
+
+
+/* comeco do rodape */
+#rodape {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--preto);
+}
+
+.direitos {
+    font-size: var(--font-pp);
+    color: var(--branco);
+    font-family: var(--font-texto);
+    font-weight: bold;
+}
+
+.social1 h1,
+.contato {
+    color: var(--castanho);
+    text-align: center;
+    font-family: var(--font-texto);
+    font-size: var(--font-pp);
+    margin-bottom: 15px;
+}
+
+.social1 img {
+    height: 25px;
+    box-shadow: none;
+}
+/*fim do rodape*/
+
+
+
+
+
+
+
+
+
+
+
+
+/* -RESPONSIVIDADE--RESPONSIVIDADE--RESPONSIVIDADE--RESPONSIVIDADE--RESPONSIVIDADE--RESPONSIVIDADE--RESPONSIVIDADE--RESPONSIVIDADE--RESPONSIVIDADE--RESPONSIVIDADE--RESPONSIVIDADE-*/
+
+/* 1° responsividade */
+@media (max-width: 1200px) {
+
+    /* some div de especificacoes a direita */
+    #espProjetos {
+        display: none;
+    }
+
+    #menuNav {
+        gap: 1.5rem;
+    }
+
+    /* exibe sapan que esta por cima da img em especificacoes de projetos */
+    .legendaFoto {
+        opacity: 1;
+    }
+
+    .h3esp {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* COMECO DA 2° RESPONSIVIDADE -- COMECO DA 2° RESPONSIVIDADE -- COMECO DA 2° RESPONSIVIDADE -- COMECO DA 2° RESPONSIVIDADE -- */
+@media (min-width: 320px) and (max-width: 1060px) {
+    
+    :root {
+        --font-g: 2rem;
+        --font-m: 1rem;
+        --font-p: 0.8rem;
+        --font-pp: 0.6rem;
+    }
+
+    /* oculta menu desktop */
+    #menuNav {
+        display: none;
+    }
+    
+    /* exibe botao que ira abrir o menu mobile */
+    .btnAbrir {
+        display: flex;
+    }
+    /* fim do menu mobile*/
+    
+
+    /* comeco da secao sobre mim */
+    /* section pai  */
+    #sobreMin {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    /* div principal, vai posicionar texto abaixo da foto e centralizalos */
+    #conteudoMe {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        width: 100%;
+    }
+    
+    .tituloMe {
+        margin-bottom: 25px;
+    }
+    
+    /* div da direta que contem as informacoes pessoais */
+    .direitaTexto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .direitaTexto p {
+        text-align: center;
+    }
+
+    .fotoG {
+        height: 300px;
+    }
+    
+    .meRedes {
+        margin: 0.5rem;
+    }
+    
+    .h2Me {
+        text-align: center;
+        margin: 1rem;
+    }
+    
+    .pSobre {
+        text-align: center;
+        display: flex;
+        width: 90%;
+    }
+    
+    /* comeco da tabela */
+    .divTabela {
+        width: 100%;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+        
+    tbody {
+        flex-wrap: nowrap;
+        font-size: var(--font-p);
+    }
+        
+    tr {
+        border-left: solid 1px var(--castanho);
+    }
+        
+    td {
+        padding: 10px;
+        margin: 10px;
+    }
+    /* fim da tabela e fim da section sobre mim */
+
+
+
+    /* comeco da section de projetos */
+    
+    /* div pai que contem o lado direito(projetos) e o lado esquerdo (especificaoes) */
+    #divP {
+        padding: 1rem;
+    }
+    /* fim da section de projetos */
+    
+
+    /* comeco da section de habilidades */
+    #Hab {
+        padding-top: 2rem;
+    }
+    
+    .tituloH {
+        padding: 1rem;
+    }
+    
+    .divTec2 {
+        padding: 1rem;
+    }
+    
+    
+    .sCursos {
+        padding: 1rem;
+    } 
+}
+
+
+
+/* FIM DA RESPONSIVIDADE DE 1060 A 350 E COMECO DA RESPONSIVIDADE MAX 600 (MOBILE) --  FIM DA RESPONSIVIDADE DE 1060 A 350 E COMECO DA RESPONSIVIDADE MAX 600 (MOBILE)*/
+
+
+
+@media (max-width: 600px) {
+    
+    .meRedes img,
+    .social img,
+    .button {
+        height: 30px;
+    }
+    
+    /* secao de home */
+    .logo {
+        font-size: var(--font-p);
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10px;
+    }
+    
+    /* header */
+    .hCabecalho {
+        height: 60px;
+        justify-content: space-between;
+    }
+
+    /* conteudo principal de home(capa do portifolio) */
+    #home2 {
+        margin: 1rem;
+        padding: 20px 0px 70px 0px;
+    }
+
+    #home2 h2 {
+        text-align: center;
+    }
+    /* fim da capa do portifolio */
+
+
+
+    /* comeco da sectio sobre mim */
+    .tituloMe {
+        font-size: var(--font-g);
+        margin: 10px;
+    }
+    
+    #sobreMin {
+        padding: 10px;
+    }
+
+
+    /* começo da div da direita que contem o texto */
+    .direitaTexto {
+        width: 100%;
+    }
+
+    .direitaTexto p {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* tabela */
+    tbody {
+        font-size: var(--font-pp);
+    }
+
+    td {
+        padding: 2px;
+        margin: 2px;
+    }
+
+
+
+    /* comeco da section de projetos */
+    #divP {
+        padding: 2px;
+    }
+
+    .h1Projetos {
+        padding: 10px;
+    }
+
+    .Qprojetos {
+        padding: 0px;
+    }
+
+    .DimgProj {
+        width: 100%;
+    }
+
+    .social1 {
+        display: none;
+    }
+    /* fim da section projetos */
+
+
+
+    /* comeco da secao habilidades */
+    #Hab {
+        padding: 10px;
+    }
+
+    .divTec2 div {
+        padding: 10px;
+        gap: 0.5rem;
+    }
+
+    .aCursos {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
+

@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+#divPrinc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(203, 234, 253);
+}
+#calculadora {
+    width: 500px;
+    height: 700px;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    background-image: url("img/geometry-1044090_1280.jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    gap: 1rem;
+    border-radius: 30px;
+}
+
+    h1 {
+        margin: 1rem;
+        font-size: 3rem;
+        color: aliceblue;
+        border-bottom: solid 4px  snow ;
+    }
+
+    .dadosCliente {
+        display: flex;
+        margin-bottom: 0.5rem;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+    }
+
+    #resultado {
+        display: flex;
+        margin-bottom: 1rem;
+        align-items: center;
+       justify-content: center;
+        width: 90%;
+        
+    }
+
+    #calculadora div h2 {
+        font-size: 2rem;
+        color:aliceblue;
+        margin-right: 1rem;
+    }
+
+
+    .dadosCliente  input {
+        height: 3rem;
+        padding: 0.5rem;
+        border-width: 0px;
+        border-radius: 8px;
+        background-color: rgb(255, 255, 255, 0.9);
+        font-size: 1rem;
+        color: #4591fb ;
+    }
+
+    button{
+        border-width: 0px;
+        border-radius: 8px;
+        margin-bottom: 2.5rem;
+        height: 2.5rem;
+        width: 80%;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        background-color: rgb(255, 255, 255);
+        color: rgb(4, 132, 244);
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    input {
+        cursor: pointer;
+      
+    }
+
+
+    #resultado textarea{
+        border-width: 0px;
+        border-radius: 20px;
+        text-align: center;
+        height: 200px;
+        width: 90%;
+        padding: 1rem;
+        background-color: rgba(255, 255, 255, 0.9);
+        color: #4591fb ;
+        font-size: 1.5rem;
+
+    }
+
+
+  
+

@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Preconexões das fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Links para as fontes -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Oswald:wght@200..700&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <title>Portifolio Mateus Marques, Developer Front-End</title>
+</head>
+
+<body>
+    <main>
+        <!-- inicio da seçao home -->
+        <section id="home">
+            <!--comeco do cabecalho/menu de navegacao -->
+            <header class="hCabecalho">
+                <div class="logo">
+                    <h1>MATEUS MARQUES</h1>
+                </div>
+
+                <!-- começo do menu de navegacao desktop  -->
+                <nav>
+                    <ul id="menuNav">
+                        <li class="menuLi">
+                            <a href="#home" class="aLink">Home</a>
+                        </li>
+                        <li class="menuLi">
+                            <a href="#sobreMin" class="aLink">Sobre Mim</a>
+                        </li>
+                        <li class="menuLi">
+                            <a href="#meusProjetos" class="aLink">Projetos</a>
+                        </li>
+                        <li class="menuLi">
+                            <a href="#Hab" class="aLink">Habilidades</a>
+                        </li>
+                        <li class="menuLi">
+                            <a href="#sobreMin" class="aLink">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- fim do menu de navegaçao desktop -->
+
+                <!-- comeco do menu de navegaçao mobile -->
+                <div class="btnAbrir">
+                    <img src="img/abrir-menu.png" alt="img abrir menu" id="abrir">
+                </div>
+
+                <div class="menuMob" id="menuMob">
+                    <div class="fecharMenu">
+                        <img src="img/marca-cruzada.png" alt="" class="fecharMenu" id="btFechar">
+                    </div>
+                    <nav class="navMob">
+                        <ul class="ulMob">
+                            <li class="liMob">
+                                <a href="#home" rel="noopener noreferrer">Home</a>
+                            </li>
+                            <li class="liMob">
+                                <a href="#sobreMin" rel="noopener noreferrer">Sobre mim</a>
+                            </li>
+                            <li class="liMob">
+                                <a href="#Hab" rel="noopener noreferrer">Habilidades</a>
+                            </li>
+                            <li class="liMob">
+                                <a href="#meusProjetos" rel="noopener noreferrer">Projetos</a>
+                            </li>
+                            <li class="liMob">
+                                <a href="#contato" rel="noopener noreferrer">Contato</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- div responsavel pelo efeito de desfoque no site quando abrir menu -->
+                <div class="overlayMenu" id="overlay"></div>
+            </header>
+            <!--fim do menu de navegaçao mobile-->
+
+
+
+            <!-- comeeco do conteudo principaldo home (capa do portifolio) -->
+            <div id="home2">
+                <div class="zoom">
+                    <img src="img/eu2.jpg" alt=" minha foto" class="fotoMateus">
+                </div>
+                <h2>Mateus Marques Da Silva</h2>
+                <h3>Developer | Front-End</h3>
+
+                <!-- imgs de redes socaiasi que fica abaixo da foto -->
+                <div id="logosCocial">
+                    <figure class="social">
+                        <a href="https://github.com/settings/profile" target="_blank" rel="noopener noreferrer">
+                            <img src="img/github.png" alt="img do git" class="git" id="imgSocial">
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/mateus-maques-da-silva-b0664a31b/" target="_blank" rel="noopener noreferrer">
+                            <img src="img/linkedin.png" alt="img do linkedin" class="linkedin" id="imgSocial">
+                        </a>
+
+                        <a href="https://www.instagram.com/mateus_marques000/?next=%2F" target="_blank" rel="noopener noreferrer">
+                            <img src="img/instagram.png" alt="img instagram" class="instagram" id="imgSocial">
+                        </a>
+
+                        <a href="https://wa.me/5511939069804" target="_blank" rel="noopener noreferrer">
+                            <img src="img/whatsapp (1).png" alt=" img whatsapp" class="whatsapp" id="imgSocial">
+                        </a>
+                    </figure>
+                </div>
+            </div>
+            </sections>
+        </section>
+        <!-- fim da pagina home -->
+
+        <!-- fim da pagina home/ comeco da pagina sobre min -- fim da pagina home/ comeco da pagina sobre min -- fim da pagina home/ comeco da pagina sobre min -- fim da pagina home/ comeco da pagina sobre min -->
+
+
+        <!--section sobre mim -->
+        <section id="sobreMin">
+            <h1 class="tituloMe">SOBRE MIM</h1>
+
+            <div id="conteudoMe">
+
+                <!-- comeco do lado esquerdo (contem a foto) -->
+                <div class="esquedaFoto">
+                    <picture class="pictureFG">
+                        <img src="img/mateusG.jpg" alt="foto de corpo todo" class="fotoG">
+                    </picture>
+
+                    <!-- obs: algumas coisa do meu figure ta o msm css da parte de home -->
+                    <div class="socialMin">
+                        <h2 class="contato">Contato - Redes Sociais</h2>
+                        <figure class="social">
+                            <a href="https://github.com/settings/profile" target="_blank" rel="noopener noreferrer">
+                                <img src="img/github.png" alt="img do git" class="git" id="imgSocial">
+                            </a>
+    
+                            <a href="https://www.linkedin.com/in/mateus-maques-da-silva-b0664a31b/" target="_blank" rel="noopener noreferrer">
+                                <img src="img/linkedin.png" alt="img do linkedin" class="linkedin" id="imgSocial">
+                            </a>
+    
+                            <a href="https://www.instagram.com/mateus_marques000/?next=%2F" target="_blank" rel="noopener noreferrer">
+                                <img src="img/instagram.png" alt="img instagram" class="instagram" id="imgSocial">
+                            </a>
+    
+                            <a href="https://wa.me/5511939069804" target="_blank" rel="noopener noreferrer">
+                                <img src="img/whatsapp (1).png" alt=" img whatsapp" class="whatsapp" id="imgSocial">
+                            </a>
+                        </figure>
+                    </div>
+                </div>
+                <!-- fim do lado esquerdo (contem a foto) -->
+
+                <!-- comeco do lado direito (contem os textos) -->
+                <div class="direitaTexto">
+
+                    <h2 class="h2Me"> Minha Jornada no Desenvolvimento</h2>
+                    <p class="pSobre">Meu interesse pela área de desenvolvimento começou quando tive meu primeiro
+                        contato com programaçãodurante o curso técnico de Informática no ensino médio. Fiquei fascinado pela 
+                        capacidade decriar e dar vida a um software. Após passar por alguns altos e baixos da vida, decidi seguir esse
+                        caminho. Deixei minha família e meu antigo emprego na bahia, e com o apoio dos meus tios, com quem moro atualmente,
+                        me mudei para São Paulo com o objetivo de realizar meu sonho de me tornarum desenvolvedor.</p>
+
+                    <p class="pSobre"> Ao chegar em São Paulo, comecei a trabalhar como garçom aos finais de semana,
+                        me matriculei no curso tecnólogo de Análise e Desenvolvimento de Sistemas e continuei meus
+                        estudos de programação. Desde então, venho desenvolvendo minhas habilidades e me apaixonando cada vez
+                        mais pela área. Gosto de comparar a programação a um jogo do estilo Souls-like — desafiador,
+                        porém recompensador. A cada obstáculo, evoluo, adquiro novas habilidades e, mesmo diante defalhas,
+                        a sensação de superação é incrível. Sinto que, a cada desafio vencido, me torno uma versão
+                        melhor de mim mesmo. </p>
+
+                    <h2 class="h2Me"> Por que me dar uma oportunidade?</h2>
+                    <p class="pSobre">Sou uma pessoa comunicativa, persistente e focada no que faço,
+                        pois acredito que todo esforço um dia será recompensado. Estou sempre buscando
+                        adquirir e aperfeiçoar meus conhecimentos, seja na faculdade, em cursos ou
+                        desenvolvendo projetos pessoais. Tenho uma grande vontade de aprender e evoluir,
+                        e por isso estou disposto até mesmo a aceitar estágios não remunerados. Embora eu possa
+                        não ser o programador mais experiente, garanto que serei o mais dedicado, e estou
+                        confiante de que não decepcionarei.</p>
+
+
+                    <div class="divTabela">
+                        <table border="0" class="tabela">
+                            <tbody>
+                                <tr>
+                                    <td> Nome: Mateus Marques Da Silva </td>
+                                    <td> instagram: @mateus_marques000 </td>
+                                </tr>
+                                <tr>
+                                    <td> Endereco: prainha-SP </td>
+                                    <td> Contato: (11) 93906-9804 </td>
+                                </tr>
+                                <tr>
+                                    <td> Idade: 21 anos </td>
+                                    <td> Linkedin: Mateus_Marques09 </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- fim do sobre mim -->
+
+
+        <!--comeco do meus projetos / fim do sobre mim -- comeco do meus projetos / fim do sobre mim -- comeco do meus projetos / fim do sobre mim -- comeco do meus projetos / fim do sobre mim -->
+
+
+        <!-- comeco do meus projetos -->
+        <section id="meusProjetos">
+            <div id="divP">
+                <h2 class="h1Projetos">PROJETOS</h2>
+
+                <div id="projetosConteudo">
+                    <div class="Qprojetos">
+                        <h3 class="h3esp">passe o curso para ver especificacoes</h3>
+
+                        <div class="DimgProj" id="dClc">
+                            <a href="projetos/calculadora/index.html" target="_blank" rel="noopener noreferrer">
+                                <figure class="figuProje1">
+                                    <!-- o figure tem uma img de fundo-->
+                                    <span class="legendaFoto" id="sClc">calculadora de imc</span>
+                                </figure>
+                            </a>
+
+                            <!-- figcaption que comtem o  artigo de especificacoes do projeto -->
+                            <figcaption class="figcLegenda" id="artjs">
+                                <article class="artIMC">
+                                    <header class="headerProj">
+                                        <h2>Calculadora de IMC</h2>
+                                    </header>
+                                    <section class="objProj">
+                                        <h3>Objetivos</h3>
+                                        <ul>
+                                            <li>Exercitar o raciocínio lógico com JavaScript.</li>
+                                            <li>Aprimorar os conhecimentos sobre manipulação do DOM e estruturas
+                                                condicionais.</li>
+                                        </ul>
+                                    </section>
+                                    <section class="scopoProj">
+                                        <h3>Escopo do Projeto</h3>
+                                        <p>Desenvolver uma página web que contenha uma calculadora de IMC interativa. A
+                                            página permitirá ao usuário inserir dados como nome, peso e altura para
+                                            calcular o índice de massa corporal.</p>
+                                    </section>
+                                    <section class="tecUsadas">
+                                        <h3>Tecnologias Utilizadas</h3>
+                                        <ul>
+                                            <li>HTML5 para a estrutura semântica do conteúdo.</li>
+                                            <li>CSS3 para estilização e layout responsivo.</li>
+                                            <li>JavaScript para a lógica de cálculo do IMC e manipulação do DOM.</li>
+                                        </ul>
+                                    </section>
+                                </article>
+                            </figcaption>
+                        </div>
+
+                        <div class="DimgProj" id="dTrf">
+                            <a href="projetos/lista de tarefas/index.html" target="_blank" rel="noopener noreferrer">
+                                <figure class="figuProje2">
+                                    <!-- o figure tem uma img de fundo-->
+                                    <span class="legendaFoto" id="sLt">lista de tarefas</span>
+                                </figure>
+                            </a>
+                            <!-- figcaption que comtem o  artigo de especificacoes do projeto -->
+                            <figcaption class="figcLegenda" id="artLt">
+                                <article class="artTarefas">
+                                    <header class="headerProj">
+                                        <h2>Lista de Tarefas</h2>
+                                    </header>
+                                    <section class="objProj">
+                                        <h3>Objetivos</h3>
+                                        <ul>
+                                            <li>Exercitar o raciocínio lógico com JavaScript.</li>
+                                            <li>Aprimorar os conhecimentos sobre manipulação do DOM e estruturas
+                                                condicionais.</li>
+                                        </ul>
+                                    </section>
+                                    <section class="scopoProj">
+                                        <h3>Escopo do Projeto</h3>
+                                        <p>O projeto inclui a criação de uma página que contenha uma lista de tarefas,
+                                            onde o usuário pode adicionar itens. O usuário insere o novo item em um
+                                            campo de entrada e, ao clicar em um botão, o item é adicionado à lista.</p>
+                                    </section>
+                                    <section class="tecUsadas">
+                                        <h3>Tecnologias Utilizadas</h3>
+                                        <ul>
+                                            <li>HTML5 para a estrutura semântica do conteúdo.</li>
+                                            <li>CSS3 para estilização e layout responsivo.</li>
+                                            <li>JJavaScript para a manipulação do DOM, interatividade e funcionalidades
+                                                dinâmicas.</li>
+                                        </ul>
+                                    </section>
+                                </article>
+                            </figcaption>
+                        </div>
+
+                        <div class="DimgProj" id="dFlm">
+                            <figure class="figuProje3">
+                                <!-- o figure tem uma img de fundo-->
+                                <span class="legendaFoto" id="sFlm">Filmes e Series</span>
+                            </figure>
+                            <!-- figcaption que comtem o  artigo de especificacoes do projeto -->
+                            <figcaption class="figcLegenda" id="artFlm">
+                                <article class="artFilmes">
+                                    <header class="headerProj">
+                                        <h2>Filmes e Series</h2>
+                                    </header>
+                                    <section class="objProj">
+                                        <h3>Objetivos</h3>
+                                        <ul>
+                                            <li>Praticar todos os conhecimentos adquiridos no curso de HTML & CSS do
+                                                Curso em Vídeo.</li>
+                                            <li>Implementar as habilidades adquiridas em HTML & CSS.</li>
+                                        </ul>
+                                    </section>
+                                    <section class="scopoProj">
+                                        <h3>Escopo do Projeto</h3>
+                                        <p>O projeto inclui a criação de uma página inicial e páginas dedicadas a filmes
+                                            e séries. Cada filme ou série terá uma página com todas as informações
+                                            relevantes. Além disso, haverá uma página de cadastro e uma página "Quem
+                                            Somos", incluindo links para redes sociais.</p>
+                                    </section>
+                                    <section class="tecUsadas">
+                                        <h3>Tecnologias Utilizadas</h3>
+                                        <ul>
+                                            <li>HTML5 para a estrutura semântica do conteúdo.</li>
+                                            <li>CSS3 para estilização e layout responsivo.</li>
+                                        </ul>
+                                    </section>
+                                </article>
+                            </figcaption>
+                        </div>
+
+                        <div class="DimgProj" id="dLpd">
+                            <a href="projetos/lampada/index.html" target="_blank" rel="projeto lanpada">
+                                <figure class="figuProje4">
+                                    <!-- o figure tem uma img de fundo-->
+                                    <span class="legendaFoto" id="sLpd">lanpada</span>
+                                </figure>
+                            </a>
+
+                            <!-- figcaption que comtem o  artigo de especificacoes do projeto -->
+                            <figcaption class="figcLegenda" id="artLpd">
+                                <article class="artLanp">
+                                    <header class="headerProj">
+                                        <h2>Lâmpada Interativa</h2>
+                                    </header>
+                                    <section class="objProj">
+                                        <h3>Objetivos</h3>
+                                        <ul>
+                                            <li>Praticar a manipulação do DOM e lógica de programação com JavaScript.
+                                            </li>
+                                            <li>Aplicar conhecimentos adquiridos em HTML e CSS para criar uma interface
+                                                visual e interativa.</li>
+                                            <li>Desenvolver a funcionalidade de uma lâmpada que pode ser acesa, apagada
+                                                e quebrada</li>
+                                        </ul>
+                                    </section>
+                                    <section class="scopoProj">
+                                        <h3>Escopo do Projeto</h3>
+                                        <p>O projeto envolve a criação de uma interface web que simula uma lâmpada
+                                            interativa. A lâmpada pode ser acesa e apagada com um botão, e pode ser
+                                            "quebrada" com outro botão. A página utilizará HTML para a estrutura, CSS
+                                            para a estilização e JavaScript para a interatividade e manipulação do DOM.
+                                        </p>
+                                    </section>
+                                    <section class="tecUsadas">
+                                        <h3>Tecnologias Utilizadas</h3>
+                                        <ul>
+                                            <li>HTML5 para a estrutura semântica do conteúdo.</li>
+                                            <li>CSS3 para estilização e layout responsivo.</li>
+                                            <li>JavaScript para a lógica de interatividade, como acender, apagar e
+                                                quebrar a lâmpada.</li>
+                                        </ul>
+                                    </section>
+                                </article>
+                            </figcaption>
+                        </div>
+                        <!-- fim das divs dos projetos que estao sendo exibidos -->
+
+
+                        <!-- comeco da div ver mais quem contem o restante dos projetos que estao ocultos com display none-->
+                        <div class="verMais" id="vverMais">
+                            <div class="DimgProj">
+                                <figure class="figuProje">
+                                    <!-- o figure tem uma img de fundo-->
+                                    <span class="legendaFoto">Em Breve</span>
+                                </figure>
+                                <!-- figcaption que comtem o  artigo de especificacoes do projeto -->
+                                <figcaption class="figcLegenda">
+                                    <article class="textoEsp">
+                                        <header class="headerProj">
+                                            <h2>Nome do Projeto</h2>
+                                        </header>
+                                        <section class="descProj">
+                                            <h3>Descrição do Projeto</h3>
+                                            <p>O objetivo deste projeto é criar um site institucional para a empresa
+                                                XYZ. O
+                                                site será responsivo, com design moderno e funcionalidade otimizada para
+                                                a
+                                                experiência do usuário.</p>
+                                        </section>
+                                        <section class="objProj">
+                                            <h3>Objetivos</h3>
+                                            <ul>
+                                                <li>Desenvolver uma interface amigável e intuitiva.</li>
+                                                <li>Implementar os novos conhecimentos adquiridos sobre manipulacao de
+                                                    dominio</li>
+                                            </ul>
+                                        </section>
+                                        <section class="scopoProj">
+                                            <h3>Escopo do Projeto</h3>
+                                            <p>O escopo do projeto inclui a criação de uma página inicial, páginas de
+                                                produtos e serviços, seção de contato com formulário de envio e
+                                                integração
+                                                com redes sociais.</p>
+                                        </section>
+                                        <section class="tecUsadas">
+                                            <h3>Tecnologias Utilizadas</h3>
+                                            <ul>
+                                                <li>HTML5 para a estrutura semântica do conteúdo.</li>
+                                                <li>CSS3 para estilização e layout responsivo.</li>
+                                                <li>JavaScript para interatividade e funcionalidades dinâmicas.</li>
+                                                <li>Frameworks como Bootstrap para acelerar o desenvolvimento.</li>
+                                            </ul>
+                                        </section>
+                                    </article>
+                                </figcaption>
+                            </div>
+
+                            <div class="DimgProj">
+                                <figure class="figuProje">
+                                    <!-- o figure tem uma img de fundo-->
+                                    <span class="legendaFoto">Em Breve</span>
+                                </figure>
+                                <!--figcaption que comtem o  artigo de especificacoes do projeto -->
+                                <figcaption class="figcLegenda">
+                                    <article class="textoEsp">
+                                        <header class="headerProj">
+                                            <h2>Nome do Projeto</h2>
+                                        </header>
+                                        <section class="descProj">
+                                            <h3>Descrição do Projeto</h3>
+                                            <p>O objetivo deste projeto é criar um site institucional para a empresa
+                                                XYZ. O
+                                                site será responsivo, com design moderno e funcionalidade otimizada para
+                                                a
+                                                experiência do usuário.</p>
+                                        </section>
+                                        <section class="objProj">
+                                            <h3>Objetivos</h3>
+                                            <ul>
+                                                <li>Desenvolver uma interface amigável e intuitiva.</li>
+                                                <li>Implementar os novos conhecimentos adquiridos sobre manipulacao de
+                                                    dominio</li>
+                                            </ul>
+                                        </section>
+                                        <section class="scopoProj">
+                                            <h3>Escopo do Projeto</h3>
+                                            <p>O escopo do projeto inclui a criação de uma página inicial, páginas de
+                                                produtos e serviços, seção de contato com formulário de envio e
+                                                integração
+                                                com redes sociais.</p>
+                                        </section>
+                                        <section class="tecUsadas">
+                                            <h3>Tecnologias Utilizadas</h3>
+                                            <ul>
+                                                <li>HTML5 para a estrutura semântica do conteúdo.</li>
+                                                <li>CSS3 para estilização e layout responsivo.</li>
+                                                <li>JavaScript para interatividade e funcionalidades dinâmicas.</li>
+                                                <li>Frameworks como Bootstrap para acelerar o desenvolvimento.</li>
+                                            </ul>
+                                        </section>
+                                    </article>
+                                </figcaption>
+                            </div>
+
+                            <div class="DimgProj">
+                                <figure class="figuProje">
+                                    <!-- o figure tem uma img de fundo-->
+                                    <span class="legendaFoto">Em Breve</span>
+                                </figure>
+                                <!--figcaption que comtem o  artigo de especificacoes do projeto -->
+                                <figcaption class="figcLegenda">
+                                    <article class="textoEsp">
+                                        <header class="headerProj">
+                                            <h2>Nome do Projeto</h2>
+                                        </header>
+                                        <section class="descProj">
+                                            <h3>Descrição do Projeto</h3>
+                                            <p>O objetivo deste projeto é criar um site institucional para a empresa
+                                                XYZ. O
+                                                site será responsivo, com design moderno e funcionalidade otimizada para
+                                                a
+                                                experiência do usuário.</p>
+                                        </section>
+                                        <section class="objProj">
+                                            <h3>Objetivos</h3>
+                                            <ul>
+                                                <li>Desenvolver uma interface amigável e intuitiva.</li>
+                                                <li>Implementar os novos conhecimentos adquiridos sobre manipulacao de
+                                                    dominio</li>
+                                            </ul>
+                                        </section>
+                                        <section class="scopoProj">
+                                            <h3>Escopo do Projeto</h3>
+                                            <p>O escopo do projeto inclui a criação de uma página inicial, páginas de
+                                                produtos e serviços, seção de contato com formulário de envio e
+                                                integração
+                                                com redes sociais.</p>
+                                        </section>
+                                        <section class="tecUsadas">
+                                            <h3>Tecnologias Utilizadas</h3>
+                                            <ul>
+                                                <li>HTML5 para a estrutura semântica do conteúdo.</li>
+                                                <li>CSS3 para estilização e layout responsivo.</li>
+                                                <li>JavaScript para interatividade e funcionalidades dinâmicas.</li>
+                                                <li>Frameworks como Bootstrap para acelerar o desenvolvimento.</li>
+                                            </ul>
+                                        </section>
+                                    </article>
+                                </figcaption>
+                            </div>
+
+                            <div class="DimgProj">
+                                <figure class="figuProje">
+                                    <!-- o figure tem uma img de fundo-->
+                                    <span class="legendaFoto">Em breve</span>
+                                </figure>
+                                <!--figcaption que comtem o  artigo de especificacoes do projeto -->
+                                <figcaption class="figcLegenda">
+                                    <article class="textoEsp">
+                                        <header class="headerProj">
+                                            <h2>Nome do Projeto</h2>
+                                        </header>
+                                        <section class="descProj">
+                                            <h3>Descrição do Projeto</h3>
+                                            <p>O objetivo deste projeto é criar um site institucional para a empresa
+                                                XYZ. O
+                                                site será responsivo, com design moderno e funcionalidade otimizada para
+                                                a
+                                                experiência do usuário.</p>
+                                        </section>
+                                        <section class="objProj">
+                                            <h3>Objetivos</h3>
+                                            <ul>
+                                                <li>Desenvolver uma interface amigável e intuitiva.</li>
+                                                <li>Implementar os novos conhecimentos adquiridos sobre manipulacao de
+                                                    dominio</li>
+                                            </ul>
+                                        </section>
+                                        <section class="scopoProj">
+                                            <h3>Escopo do Projeto</h3>
+                                            <p>O escopo do projeto inclui a criação de uma página inicial, páginas de
+                                                produtos e serviços, seção de contato com formulário de envio e
+                                                integração
+                                                com redes sociais.</p>
+                                        </section>
+                                        <section class="tecUsadas">
+                                            <h3>Tecnologias Utilizadas</h3>
+                                            <ul>
+                                                <li>HTML5 para a estrutura semântica do conteúdo.</li>
+                                                <li>CSS3 para estilização e layout responsivo.</li>
+                                                <li>JavaScript para interatividade e funcionalidades dinâmicas.</li>
+                                                <li>Frameworks como Bootstrap para acelerar o desenvolvimento.</li>
+                                            </ul>
+                                        </section>
+                                    </article>
+                                </figcaption>
+                            </div>
+                        </div>
+
+                        <!-- botao que ira exibir ou ocultar o restante dos projetos -->
+                        <div class="bMais">
+                            <button class="bVer" id="bbver">ver mais</button>
+                        </div>
+                    </div>
+                    <!-- fim do lado diretio(onde contem os projetos) -->
+
+
+                    <!-- comeco do lado esquerdo de meus projetos (contem especificacoes) -->
+                    <div id="espProjetos">
+                        <h2 class="hEsp">ESPECIFICACOES</h2>
+
+                        <div id="esp-js">
+                            <p id="pr" class="pmsg">Passse o mouse por cima do projeto que deseja saber</p>
+                            <p class="pEmDev">Em breve, projeto em desenvolvimento...</p>
+                        </div>
+
+                        <div class="bEsp">
+                            <button class="bRepositorio">repositorio</button>
+                            <button class="bDeploy">deploy</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- fim do lado esquerdo do meus projetos(contem as especificaçoes) -->
+            </div>
+        </section>
+        <!-- fim da seçao meus projetos -->
+
+
+        <!-- fim da seçao meus projetos /comeco da section habilidades --fim da seçao meus projetos /comeco da section habilidades -- fim da seçao meus projetos /comeco da section habilidades -- -->
+
+
+        <!-- comeco da section habilidades -->
+        <section id="Hab">
+            <h1 class="tituloH">habilidades</h1>
+
+            <!-- comeco da section que contem as imgs de tecnologias dominadas -->
+            <div class="divTac1">
+                <h3 class="h3Tec">Tecnologias Dominadas</h3>
+
+                <section class="divTec2">
+                    <div class="dtec" id="dhtml">
+                        <img src="img/html.png" alt="" class="himg">
+                        <p class="ptec"> HTML (HyperText Markup Language) linguagem de marcação usada para criar e
+                            estruturar páginas na web</p>
+                    </div>
+
+                    <div class="dtec" id="dcss">
+                        <img src="img/social.png" alt="img do css" class="himg">
+                        <p class="ptec">CSS (Cascading Style Sheets) linguagem que define o estilo e o layout das
+                            páginas web,</p>
+                    </div>
+
+                    <div class="dtec" id="djs">
+                        <img src="img/java-script.png" alt="" class="himg">
+                        <p class="ptec">JS (JavaScript) linguagem de programação que torna páginas web interativas e
+                            dinâmicas.</p>
+                    </div>
+
+                    <div class="dtec" id="dgit">
+                        <img src="img/git&github.png" alt="" class="himg">
+                        <p class="ptec">Git sistema de controle de versão para gerenciar código. & GitHub plataforma
+                            para hospedar e
+                            colaborar em repositórios Git.
+                        </p>
+                    </div>
+                </section>
+                <div class="tecTexto">
+                    <h4 class="h4Extras">Extras</h4>
+                    <p class="pTecExtr">Atualmente, além de dominar tecnologias essenciais como <b>Java Script, HTML,
+                            CSS e GitHub,</b> adquiri conhecimentos básicos em <b>Python</b> durante o curso de Análise
+                        e Desenvolvimento de Sistemas na Anhanguera. No momento, estou focado em aprimorar minhas
+                        habilidades em JavaScript e recentemente iniciei meus estudos em inglês para expandir ainda mais
+                        minhas competências. Busco conhecimentos que possam me fazer evoluir como profissional na área
+                        de desenvolvimento front-end.</p>
+                </div>
+                <!-- fim da section de tecnologias dominadas -->
+
+
+                <!-- secao de cursos  -->
+                <section class="sCursos">
+                    <h2 class="hcursos">Cursos</h2>
+                    <article class="aCursos">
+
+                        <section class="b7webJS">
+                            <h4 class="tituloCursos">ADS 1/6 semestre</h4>
+                            <p>Instituição: <a href="https://b7web.com.br/" target="_blank"
+                                    rel="noopener noreferrer">Anhaguera</a></p>
+                            <p>Duração: 2 anos e 6 meses</p>
+                            <p>Período: 2024 - 2026</p>
+                            <p><a href="http://#" target="_blank" rel="noopener noreferrer">Certificado</a></p>
+                        </section>
+
+                        <section class="cursoVideo">
+                            <h4 class="tituloCursos">html & css </h4>
+                            <p>Instituição: <a href="https://www.cursoemvideo.com/" target="_blank"
+                                    rel="noopener noreferrer">curso em video</a></p>
+                            <p>Duração: 40 horas</p>
+                            <p>Período: 2021 - 2022</p>
+                            <p><a href="http://#" target="_blank" rel="noopener noreferrer">Certificado</a></p>
+                        </section>
+
+                        <section class="b7webHTML">
+                            <h4 class="tituloCursos"> java script - 50%</h4>
+                            <p>Instituição: <a href="https://b7web.com.br/" target="_blank"
+                                    rel="noopener noreferrer">B7Web</a></p>
+                            <p>Duração: 90 horas</p>
+                            <p>Período: 2024 - 2024</p>
+                            <p><a href="http://#" target="_blank" rel="noopener noreferrer">Certificado</a></p>
+                        </section>
+
+                        <section class="b7webJS">
+                            <h4 class="tituloCursos"> html & css</h4>
+                            <p>Instituição: <a href="https://b7web.com.br/" target="_blank"
+                                    rel="noopener noreferrer">B7Web</a></p>
+                            <p>Duração: 90 horas</p>
+                            <p>Período: 2023 - 2024</p>
+                            <p><a href="http://#" target="_blank" rel="noopener noreferrer">Certificado</a></p>
+                        </section>
+                    </article>
+                </section>
+                <!-- fim da section de cursos  -->
+            </div>
+        </section>
+        <!-- fim da section de tecnologias dominadas -->
+    </main>
+    <!-- fim do conteudo princiapal de toda a pagina -->
+
+
+    <!-- comeco do rodape -->
+    <footer id="rodape">
+        <div class="direitos">
+            <p> Copyright © 2024 Mateus Marques. Todos os direitos reservados.</p>
+        </div>
+        <div class="social1">
+            <h1>Contato - Redes Sociais</h1>
+
+            <div id="rodapeSoc">
+                <figure class="social">
+                    <a href="https://github.com/settings/profile" target="_blank" rel="noopener noreferrer">
+                        <img src="img/github.png" alt="img do git" class="git">
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/mateus-maques-da-silva-b0664a31b/" target="_blank" rel="noopener noreferrer">
+                        <img src="img/linkedin.png" alt="img do linkedin" class="linkedin">
+                    </a>
+
+                    <a href="https://www.instagram.com/mateus_marques000/?next=%2F" target="_blank" rel="noopener noreferrer">
+                        <img src="img/instagram.png" alt="img instagram" class="instagram">
+                    </a>
+
+                    <a href="https://wa.me/5511939069804" target="_blank" rel="noopener noreferrer">
+                        <img src="img/whatsapp (1).png" alt=" img whatsapp" class="whatsapp">
+                    </a>
+                </figure>
+            </div>
+        </div>
+    </footer>
+
+    <script src="javaScript/script.js"></script>
+</body>
+
+</html>

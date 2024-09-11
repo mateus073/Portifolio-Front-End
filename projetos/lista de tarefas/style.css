@@ -1,0 +1,79 @@
+#cabecalho {
+    background-color: #228b22;
+    color: #ffffff;
+    height: 100px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 100px;
+    font-size: 40px;
+}
+
+
+body {
+    background-color: #1c1c1c;
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+   
+}
+
+div {
+    padding: 20px 50px 20px 50px;
+}
+
+.title {
+    font-size: 48px;
+    color: #00ff7f;
+}
+
+.classNewLi{
+    margin-bottom: 24px;
+    font-size: 24px;
+}
+
+input {
+    height: 32px;
+    background-color: transparent;
+    color: white;
+    border-color: #00ff7f;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 8px;
+}
+
+button {
+    padding: 14px;
+    font-size: 16px;
+    background-color: #228b22;
+    border-radius: 4px;
+    border-width: 0px; /* zera a largura da borda fazendo ela desaparecer*/
+    color: white;
+    font-weight: bold; /* largura do texto (nesse caso coloquei em negrito*/
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#rodape {
+    height: 100px;
+    width: 100%;
+    color: #ffffff;
+    background-color: #228b22;
+    font-size: 40px;
+    padding: 20px;
+    margin-top: 100px;
+}
